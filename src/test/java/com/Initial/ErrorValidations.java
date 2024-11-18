@@ -12,6 +12,7 @@ public class ErrorValidations extends BaseTest {
 		// TODO Auto-generated method stub
 		loginPage.loginApplication("sagar729876@gmail.com", "Naruto@1");
 		Assert.assertEquals(loginPage.errorMessageValidation(), "Incorrect email or password.");
+		System.out.println("CHanges done by Y after clone");
 	}
 	
 	@Test
