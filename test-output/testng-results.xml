@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="7" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-17T15:03:23 IST" name="Submit Order" finished-at="2024-11-17T15:03:43 IST" duration-ms="20384">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrder.submitOrderIphone(java.util.HashMap)[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" name="submitOrderIphone" class="com.Initial.SubmitOrder"/>
+      </group> <!-- Purchase -->
+      <group name="Error Handling">
+        <method signature="ErrorValidations.wrongLogin()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" name="wrongLogin" class="com.Initial.ErrorValidations"/>
+      </group> <!-- Error Handling -->
+    </groups>
+    <test started-at="2024-11-17T15:03:23 IST" name="Error Validation" finished-at="2024-11-17T15:03:35 IST" duration-ms="12158">
+      <class name="com.Initial.ErrorValidations">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:23 IST" name="launchURL" finished-at="2024-11-17T15:03:27 IST" duration-ms="3568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method retried="true" signature="wrongLogin()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:27 IST" name="wrongLogin" finished-at="2024-11-17T15:03:28 IST" duration-ms="1113" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or sapassword.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or sapassword.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.Initial.ErrorValidations.wrongLogin(ErrorValidations.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongLogin -->
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:28 IST" name="closeBroswer" finished-at="2024-11-17T15:03:28 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBroswer -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:28 IST" name="launchURL" finished-at="2024-11-17T15:03:31 IST" duration-ms="2965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="wrongLogin()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:31 IST" name="wrongLogin" finished-at="2024-11-17T15:03:31 IST" duration-ms="679" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or sapassword.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or sapassword.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.Initial.ErrorValidations.wrongLogin(ErrorValidations.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongLogin -->
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:32 IST" name="closeBroswer" finished-at="2024-11-17T15:03:32 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBroswer -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:32 IST" name="launchURL" finished-at="2024-11-17T15:03:34 IST" duration-ms="1614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="wrongLogin2()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:34 IST" name="wrongLogin2" finished-at="2024-11-17T15:03:35 IST" duration-ms="1192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongLogin2 -->
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.ErrorValidations@798162bc]" started-at="2024-11-17T15:03:35 IST" name="closeBroswer" finished-at="2024-11-17T15:03:35 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBroswer -->
+      </class> <!-- com.Initial.ErrorValidations -->
+    </test> <!-- Error Validation -->
+    <test started-at="2024-11-17T15:03:23 IST" name="Submit Order" finished-at="2024-11-17T15:03:43 IST" duration-ms="20384">
+      <class name="com.Initial.SubmitOrder">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:23 IST" name="launchURL" finished-at="2024-11-17T15:03:27 IST" duration-ms="3125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="submitOrderIphone(java.util.HashMap)[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:27 IST" name="submitOrderIphone" data-provider="getData" finished-at="2024-11-17T15:03:32 IST" duration-ms="5053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Naruto55@1, email=sagar729876@gmail.com, productName=IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderIphone -->
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:32 IST" name="closeBroswer" finished-at="2024-11-17T15:03:32 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBroswer -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:32 IST" name="launchURL" finished-at="2024-11-17T15:03:35 IST" duration-ms="2854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="submitOrderIphone(java.util.HashMap)[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:35 IST" name="submitOrderIphone" data-provider="getData" finished-at="2024-11-17T15:03:40 IST" duration-ms="5081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=James55@1, email=jamesHORNER@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderIphone -->
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:40 IST" name="closeBroswer" finished-at="2024-11-17T15:03:40 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBroswer -->
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:40 IST" name="launchURL" finished-at="2024-11-17T15:03:42 IST" duration-ms="2664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method signature="orderHistoryIphone()[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:42 IST" name="orderHistoryIphone" finished-at="2024-11-17T15:03:43 IST" depends-on-methods="com.Initial.SubmitOrder.submitOrderIphone" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryIphone -->
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.SubmitOrder@2f666ebb]" started-at="2024-11-17T15:03:43 IST" name="closeBroswer" finished-at="2024-11-17T15:03:43 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBroswer -->
+      </class> <!-- com.Initial.SubmitOrder -->
+    </test> <!-- Submit Order -->
+  </suite> <!-- Submit Order -->
+</testng-results>

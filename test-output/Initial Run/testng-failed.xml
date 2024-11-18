@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Initial Run]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="submit order(failed)">
+    <classes>
+      <class name="com.Initial.SubmitOrder">
+        <methods>
+          <include name="launchURL"/>
+          <include name="submitOrderIphone"/>
+          <include name="orderHistoryIphone"/>
+          <include name="closeBroswer"/>
+        </methods>
+      </class> <!-- com.Initial.SubmitOrder -->
+    </classes>
+  </test> <!-- submit order(failed) -->
+</suite> <!-- Failed suite [Initial Run] -->
