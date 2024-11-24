@@ -14,11 +14,19 @@ public class DataReader {
 
 	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
 		// read json to String
+//		String jsonContent = FileUtils.readFileToString(new File(filePath));
+//		
+//		ObjectMapper mapper = new ObjectMapper();
+//		List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>(){});
+//		return data;	
+		
 		String jsonContent = FileUtils.readFileToString(new File(filePath));
 		
 		ObjectMapper mapper = new ObjectMapper();
+		
 		List<HashMap<String, String>> data = mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>(){});
-		return data;	
+		
+		return data;
 	}
 
 }
