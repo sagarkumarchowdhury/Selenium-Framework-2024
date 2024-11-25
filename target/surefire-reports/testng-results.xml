@@ -1,97 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-17T16:02:06 IST" name="Submit Order" finished-at="2024-11-17T16:02:27 IST" duration-ms="21566">
+  <suite started-at="2024-11-25T13:34:17 IST" name="Submit Order" finished-at="2024-11-25T13:34:22 IST" duration-ms="4421">
     <groups>
-      <group name="Purchase">
-        <method signature="SubmitOrder.submitOrderIphone(java.util.HashMap)[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" name="submitOrderIphone" class="com.Initial.SubmitOrder"/>
-      </group> <!-- Purchase -->
       <group name="Error Handling">
-        <method signature="ErrorValidations.wrongLogin()[pri:0, instance:com.Initial.ErrorValidations@23e84203]" name="wrongLogin" class="com.Initial.ErrorValidations"/>
+        <method signature="ErrorValidations.wrongLogin()[pri:0, instance:com.Initial.ErrorValidations@14cd1699]" name="wrongLogin" class="com.Initial.ErrorValidations"/>
       </group> <!-- Error Handling -->
     </groups>
-    <test started-at="2024-11-17T16:02:06 IST" name="Error Validation" finished-at="2024-11-17T16:02:16 IST" duration-ms="10185">
+    <test started-at="2024-11-25T13:34:17 IST" name="Test" finished-at="2024-11-25T13:34:17 IST" duration-ms="14">
+    </test> <!-- Test -->
+    <test started-at="2024-11-25T13:34:17 IST" name="Error Validation" finished-at="2024-11-25T13:34:22 IST" duration-ms="4421">
       <class name="com.Initial.ErrorValidations">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.ErrorValidations@23e84203]" started-at="2024-11-17T16:02:06 IST" name="launchURL" finished-at="2024-11-17T16:02:12 IST" duration-ms="6023" status="PASS">
+        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.ErrorValidations@14cd1699]" started-at="2024-11-25T13:34:17 IST" name="launchURL" finished-at="2024-11-25T13:34:20 IST" duration-ms="3196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchURL -->
-        <test-method signature="wrongLogin()[pri:0, instance:com.Initial.ErrorValidations@23e84203]" started-at="2024-11-17T16:02:12 IST" name="wrongLogin" finished-at="2024-11-17T16:02:13 IST" duration-ms="1088" status="PASS">
+        <test-method signature="wrongLogin()[pri:0, instance:com.Initial.ErrorValidations@14cd1699]" started-at="2024-11-25T13:34:20 IST" name="wrongLogin" finished-at="2024-11-25T13:34:22 IST" duration-ms="1064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongLogin -->
-        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.ErrorValidations@23e84203]" started-at="2024-11-17T16:02:13 IST" name="closeBroswer" finished-at="2024-11-17T16:02:13 IST" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBroswer -->
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.ErrorValidations@23e84203]" started-at="2024-11-17T16:02:13 IST" name="launchURL" finished-at="2024-11-17T16:02:15 IST" duration-ms="1746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method signature="wrongLogin2()[pri:0, instance:com.Initial.ErrorValidations@23e84203]" started-at="2024-11-17T16:02:15 IST" name="wrongLogin2" finished-at="2024-11-17T16:02:16 IST" duration-ms="1059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrongLogin2 -->
-        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.ErrorValidations@23e84203]" started-at="2024-11-17T16:02:16 IST" name="closeBroswer" finished-at="2024-11-17T16:02:16 IST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.ErrorValidations@14cd1699]" started-at="2024-11-25T13:34:22 IST" name="closeBroswer" finished-at="2024-11-25T13:34:22 IST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBroswer -->
       </class> <!-- com.Initial.ErrorValidations -->
     </test> <!-- Error Validation -->
-    <test started-at="2024-11-17T16:02:06 IST" name="Submit Order" finished-at="2024-11-17T16:02:27 IST" duration-ms="21566">
-      <class name="com.Initial.SubmitOrder">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:06 IST" name="launchURL" finished-at="2024-11-17T16:02:11 IST" duration-ms="5525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method signature="submitOrderIphone(java.util.HashMap)[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:11 IST" name="submitOrderIphone" data-provider="getData" finished-at="2024-11-17T16:02:17 IST" duration-ms="5100" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Naruto55@1, email=sagar729876@gmail.com, productName=IPHONE 13 PRO}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrderIphone -->
-        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:17 IST" name="closeBroswer" finished-at="2024-11-17T16:02:17 IST" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBroswer -->
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:17 IST" name="launchURL" finished-at="2024-11-17T16:02:18 IST" duration-ms="1830" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method signature="submitOrderIphone(java.util.HashMap)[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:18 IST" name="submitOrderIphone" data-provider="getData" finished-at="2024-11-17T16:02:24 IST" duration-ms="5485" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=James55@1, email=jamesHORNER@gmail.com, productName=ADIDAS ORIGINAL}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrderIphone -->
-        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:24 IST" name="closeBroswer" finished-at="2024-11-17T16:02:24 IST" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBroswer -->
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:24 IST" name="launchURL" finished-at="2024-11-17T16:02:26 IST" duration-ms="2150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method signature="orderHistoryIphone()[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:26 IST" name="orderHistoryIphone" finished-at="2024-11-17T16:02:27 IST" depends-on-methods="com.Initial.SubmitOrder.submitOrderIphone" duration-ms="706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderHistoryIphone -->
-        <test-method is-config="true" signature="closeBroswer()[pri:0, instance:com.Initial.SubmitOrder@1f9e9475]" started-at="2024-11-17T16:02:27 IST" name="closeBroswer" finished-at="2024-11-17T16:02:27 IST" duration-ms="74" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBroswer -->
-      </class> <!-- com.Initial.SubmitOrder -->
-    </test> <!-- Submit Order -->
   </suite> <!-- Submit Order -->
 </testng-results>
