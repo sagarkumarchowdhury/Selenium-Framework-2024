@@ -16,6 +16,7 @@ public class ErrorValidations extends BaseTest {
 		System.out.println("Changes done by XX");
 		System.out.println("New changes done by XX and pushed to develop branch");
 		System.out.println("Nnew chnages done by Y and pushed to Develop branch");
+		System.out.println("Nnew chnages done by XX on today");
 	}
 	
 	@Test
